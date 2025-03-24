@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #346640;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #333;
+            color: #306d39;
+            padding: 10px 0;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: #f6fefb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Home Section */
+        #home {
+            height: 100vh;
+            background: url('https://cdn.pixabay.com/photo/2024/05/21/19/57/computer-8779039_1280.jpg') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative; 
+        }
+
+        
+        .profile-pic {
+            border-radius: 50%;
+            width: 150px;
+            position: absolute;
+            top: 20px; 
+            left: 20px; 
+            border: 4px solid #fff; 
+        }
+
+        .hero-text {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero-subtext {
+            color: #f8f8f8;
+            font-size: 1.5rem;
+        }
+
+        .highlight {
+            color: #f4a261; 
+        }
+
+        
+        #about {
+            padding: 50px;
+            background-color: #eef8f2;
+            text-align: center;
+        }
+
+        #about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        #about p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        
+        #projects {
+            background-color: #eef8f2;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+
+        .card-img-top {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-body {
+            background-color: #fff;
+        }
+
+        
+        #skills {
+            padding: 50px;
+            background-color: #eef8f2;
+            text-align: center;
+        }
+
+        #skills h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .skills-image {
+            width: 100%;
+            height: auto;
+        }
+
+        
+        #contact {
+            padding: 50px;
+            background-color: #eef8f2;
+            text-align: center;
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        
+        <img src="photo.jpg" alt="Profile Photo" class="profile-pic"style="height: 150px;width: 150px;">
+        <div class="hero-content">
+            <h1 class="hero-text">Hi, I'm <span class="highlight">Beka</span></h1>
+            <p class="hero-subtext">Welcome To My Portfolio</p>
+        </div>
+    </section>
+
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-6">
+                    <p>My name is Beka, and I am currently in my third year of studying Computer Science
+                       at the American College of Technology. Throughout my academic journey, I have developed
+                       a strong passion for technology and problem-solving, and I am dedicated to expanding my 
+                       knowledge in programming and software development.</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="https://www.act.edu.et/assets/img/act1.png" alt="About Me" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="clone.jpg" class="card-img-top" alt="Project 1"style="height: 580px;;width: 100%;">
+                    <div class="card-body">
+                        <h5 class="card-title">CLONE</h5>
+                        <p class="card-text">Front Page of My Collage.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="project2.jpg" class="card-img-top" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">A personal portfolio showcasing my skills and projects.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://t3.ftcdn.net/jpg/01/26/51/72/240_F_126517298_imxbiji9ETcFmr3QThmGqBvsy8UKaMH9.jpg" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stay tuned for more exciting projects!</h5>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="container">
+            <div class="row">
+                <!-- Text Section (6 Grids) -->
+                <div class="col-md-6">
+                    <br><br>
+                    <p>HTML & CSS</p>
+                    <p>JavaScript</p>
+                    <p>PHP</p>
+                    <p>Python</p>
+                </div>
+                
+                <div class="col-md-6">
+                    <img src="https://cdn.pixabay.com/photo/2019/10/09/07/28/development-4536630_1280.png"style="width: 300px;height: 300px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 My Portfolio</p>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
