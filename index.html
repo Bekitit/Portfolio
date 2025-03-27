@@ -59,18 +59,19 @@
         }
 
         
-        pic {
-    border-radius: 50%;
-    border: 3px solid #fff;
-    object-fit: cover;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    z-index: 10;
-    width: clamp(80px, 15vw, 150px);
-    height: clamp(80px, 15vw, 150px);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .profile-pic {
+            border-radius: 50%;
+            border: 3px solid #fff;
+            object-fit: cover;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            width: clamp(80px, 15vw, 150px); 
+            height: clamp(80px, 15vw, 150px);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
 @media (max-width: 1200px) {
     .profile-pic {
         width: clamp(70px, 12vw, 130px);
@@ -101,6 +102,7 @@
         left: 10px;
     }
 }
+
 
         .hero-text {
             color: #fff;
