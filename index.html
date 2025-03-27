@@ -57,52 +57,75 @@
             text-align: center;
             position: relative; 
         }
-
-        
         .profile-pic {
-            border-radius: 50%;
-            border: 3px solid #fff;
-            object-fit: cover;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            z-index: 10;
-            width: clamp(80px, 15vw, 150px); 
-            height: clamp(80px, 15vw, 150px);
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 10;
+    
+    width: clamp(120px, 20vw, 220px); 
+    height: clamp(120px, 20vw, 220px);
+    
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
 }
 
 @media (max-width: 1200px) {
     .profile-pic {
-        width: clamp(70px, 12vw, 130px);
-        height: clamp(70px, 12vw, 130px);
+        width: clamp(100px, 18vw, 200px);
+        height: clamp(100px, 18vw, 200px);
     }
 }
 
 @media (max-width: 992px) {
     .profile-pic {
-        width: clamp(60px, 10vw, 110px);
-        height: clamp(60px, 10vw, 110px);
+        width: clamp(90px, 16vw, 180px);
+        height: clamp(90px, 16vw, 180px);
     }
 }
 
 @media (max-width: 768px) {
     .profile-pic {
-        width: clamp(50px, 8vw, 90px);
-        height: clamp(50px, 8vw, 90px);
-        border-width: 2px;
+        width: clamp(80px, 14vw, 160px);
+        height: clamp(80px, 14vw, 160px);
+        top: 20px;
+        left: 20px;
     }
 }
 
 @media (max-width: 576px) {
     .profile-pic {
-        width: clamp(40px, 6vw, 70px);
-        height: clamp(40px, 6vw, 70px);
-        top: 10px;
-        left: 10px;
+        width: clamp(70px, 12vw, 140px);
+        height: clamp(70px, 12vw, 140px);
+        border-width: 3px;
+    }
+}
+@media (max-width: 768px) {
+    .profile-pic {
+        width: 180px !important;  
+        height: 180px !important;
+        top: 25px;
+        left: 25px;
+        border-width: 4px;
     }
 }
 
+@media (max-width: 576px) and (orientation: portrait) {
+    .profile-pic {
+        width: 120px !important;  
+        height: 120px !important;
+    }
+}
 
         .hero-text {
             color: #fff;
